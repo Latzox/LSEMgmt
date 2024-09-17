@@ -1,5 +1,3 @@
-# LSEMgmt.psm1 - Main Module File for LSEMgmt
-
 . $PSScriptRoot\functions\Write-Log.ps1
 # . $PSScriptRoot\functions\Get-DiskUsage.ps1
 # . $PSScriptRoot\functions\Test-InternetConnection.ps1
