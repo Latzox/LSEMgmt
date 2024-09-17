@@ -6,6 +6,10 @@ run-name: >
 on:
     workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   Publish:
     runs-on: ubuntu-latest
