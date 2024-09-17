@@ -30,6 +30,6 @@ jobs:
         run: |
           $module = @{
             Path       = '.'
-            Repository = 'ACRDemoRepo'
+            Repository = ${{ vars.PSRepository }}
           }
           Publish-PSResource @module
