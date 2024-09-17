@@ -7,10 +7,7 @@
     Copyright         = '(c) Marco Platzer. All rights reserved.'
     Description       = 'A PowerShell module for local system environment management and monitoring tasks.'
     PowerShellVersion = '7.1'
-    FunctionsToExport = 'Write-Log', 'Get-DiskUsage', 
-    'Test-InternetConnection', 'Invoke-ApiRequest', 'Invoke-SQLQuery', 
-    'Set-EnvironmentVariable', 'Get-NetworkInfo', 'Test-PortAvailability', 
-    'Get-OSDetails'
+    FunctionsToExport = 'Write-Log'
     CmdletsToExport   = '*'
     VariablesToExport = '*'
     AliasesToExport   = '*'
