@@ -4,7 +4,6 @@
 
 ## Features
 - `Write-Log`: Write structured logs to a file or console.
-- `Invoke-FileDownload`: Download files from a specified URL with System.WebClient
 - `Get-DiskUsage`: Analyze disk usage across directories.
 - `Test-InternetConnection`: Quickly check if the internet connection is up and running.
 - `Invoke-ApiRequest`: Automate REST API calls.
