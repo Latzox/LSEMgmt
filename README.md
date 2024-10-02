@@ -3,38 +3,17 @@
 **LSEMgmt** is a PowerShell module designed to help with daily system management tasks, including logging, file downloads, disk usage checks, network diagnostics, and more.
 
 ## Features
-- `Write-Log`: Write structured logs to a file or console.
-- `Get-DiskUsage`: Analyze disk usage across directories.
-- `Test-InternetConnection`: Quickly check if the internet connection is up and running.
-- `Invoke-ApiRequest`: Automate REST API calls.
-- `Invoke-SQLQuery`: Quickly execute SQL queries on your databases.
-- `Set-EnvironmentVariable`: Easily manage environment variables.
-- `Get-NetworkInfo`: Retrieve network details.
-- `Test-PortAvailability`: Check if a specific port is open.
-- `Get-OSDetails`: Get details about the operating system.
+- `Compare-FileHash`: Check the integrity of a file.
 
 ## Installation
 
-To install this module from the PowerShell Gallery:
-
-```PowerShell
-Install-Module -Name LSEMgmt -Repository PSGallery
-```
+To install this module you have to clone the repository and import the module. The module gets publish into a private registry at the moment.
 
 ## Usage
 Here are some usage examples:
 
-#### Write environment variables
+#### Check the integrity of a file.
 ```PowerShell
-Set-EnvironmentVariable -Name "MyVar" -Value "MyValue" -Scope User
-```
-
-#### List folders and files with high storage usage
-```PowerShell
-Get-DiskUsage -Path C:\Project\ -TopFiles 10
-```
-
-#### Invoke sql quieries on a database
-```PowerShell
-Invoke-SQLQuery -Query "SELECT * FROM Users" -Server "localhost" -Database "DB"
+Compare-FileHash -Algorithm SHA256 -File1 "C:\file1.txt" -File2 "C:\file2.txt"
+Compare-FileHash -Algorithm SHA256 -File1 "C:\file1.txt" -Checksum "ABC123"
 ```
